@@ -2,7 +2,7 @@ var express = require('express')
 
 var app = express()
 
-const SERVER_PORT = 3000
+const SERVER_PORT = process.env.PORT || 3000
 const SERVER_HOST = "localhost"
 
 app.use(express.json()) // for parsing application/json
